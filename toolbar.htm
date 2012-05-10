@@ -12,7 +12,7 @@
  
 </script>
 <script type="text/javascript">
-<!--
+ 
  
 	function init(){
 	   var bar=document.getElementById('toolbar');
@@ -20,12 +20,12 @@
 	   bar.style.left=$(window).width()-200;		
 	   default_top=bar.style.top=$(window).height()-30;	
 		function auto(){
-		  	       bar.style.top =$(this).scrollTop()+$(window).height()-30;
-					bar.style.left=$(this).scrollLeft()+$(window).width()-200;
+		  	       bar.style.top =$(window).scrollTop()+$(window).height()-30;
+					bar.style.left=$(window).scrollLeft()+$(window).width()-200;
 		}
 	   $(window).scroll(function(){
 		
-   auto()
+		  auto()
 		 
 	   });
 		
@@ -36,7 +36,7 @@
 	   });
 	}
 
-//-->
+ 
 </script>
 <body onload="init()">
 <a href="http://dashanxue.com">dashanxue</a>
